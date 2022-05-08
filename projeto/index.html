@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcuticon" href="imagens2/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Indie+Flower&family=Libre+Bodoni:ital,wght@1,400;1,500;1,600&family=Square+Peg&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7c0a307488.js" crossorigin="anonymous"></script>
+        <title>Gilana Nunes</title>
+    </head>
+    <body>
+        <header>
+            <div> 
+                <img src="imagens2/logotipook.png" alt="Go beyond" width="50%">         
+            </div>
+            <ul> 
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/gilananunes/?msgOverlay=true">linkedin</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:nunesgilana@gmail.com">email</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/525564654831">whatsapp</a>
+                </li>
+            </ul>
+            
+        </header>
+
+        <main>
+            <section class="container">
+
+                <div class="name">
+                    <h1>Gilana Nunes</h1>
+                    <h5>English teacher</h5>
+                </div>
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-caret-down"></i>
+                </div>
+
+                <div style="display:none;" id="about">
+                    <p>
+                        Journalist, TEFL Certified. Over seven years teaching experience working with toddlers, children, teens and adults. In love with teaching, knowing new cultures and bonding with people. 
+                    </p>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <p>deixe seu contato!</p>
+                    </div>
+                    <form action=""> 
+                        <input type="text" placeholder="seu melhor email :)">
+                        <button>enviar!</button>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+        <script> 
+            function displayAbout() {
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }   
+        </script>
+    </body>
+</html>
